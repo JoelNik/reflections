@@ -2,3 +2,26 @@ What happens when you initialize a repository?  Why do you need to do it?
 Initializing a repository creates a hidden git directory/file behind the scenes to store all the metadata for the files. 
 Without the init, Git doesn't have the hidden files/metadata to do version control.
 
+How is the staging area different from the working directory and the repository?  What value do you think it offers?
+It adds another degree of seperation between the working directory and repository.
+This gives you more flexibility when it comes to changing files and grouping logical changes into a the right commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+Only move those files to the staging area that correspond to the change, even if you've made edits to more than one file.
+
+What are some situations when branches would be helpful in keeping you changes organized?  How would branches help?
+It allows you another level of grouping changes. 
+In particular, it lets you easily switch between and manage changes that might include multiple series of commits.
+
+How do diagrams help you visualize the branch structure?
+It helps you visualize which commits are missing from different branches without comparing individual commits.
+
+What is the result of merging two branches together?  Why do we represent it the way we do?
+Merging branches together produces a single file incorporating the changes from both sets of commits.
+Since it is combining changes from multiple commits (and produces a new version of the file), it should also be represented as a new commit.
+Since it draws from both files, it should see both merging commits as parents. 
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+Making comparisons takes time.
+By automatically making changes, Git reduces the overhead for merging branches and makes it easier to bring over changes and keep branches up to date.
+As with any automatic process, Git's collision detection may not always match up with what you might expect. 
