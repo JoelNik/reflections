@@ -1,0 +1,5 @@
+When would you want to use a remote repository rather than keeping all of your work local?
+A remote repository offers several advantages.
+It allows an easy backup of your repository in the cloud.
+It makes your work accessible from another machines.  
+It allows you to share an up-to-date version of your repository with other people.
